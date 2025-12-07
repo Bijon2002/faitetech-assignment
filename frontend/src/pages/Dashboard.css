@@ -1,0 +1,55 @@
+.dash-wrapper {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.dash-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.dash-title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.dash-info p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+.error-text {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loading-text {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
