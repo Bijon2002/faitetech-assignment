@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../api';
-import './Dashboard.css'; // NEW modern CSS file
+import './Dashboard.css'; // modern CSS file
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -45,6 +45,17 @@ function Dashboard() {
   return (
     <div className="dash-wrapper">
       <div className="dash-card">
+        {/* Profile Picture */}
+        <img
+          className="profile-pic"
+          src={
+            user.profilePic
+              ? `${process.env.REACT_APP_API_URL}/uploads/${user.profilePic}`
+              : '/default.png' // fallback image in public folder
+          }
+          alt="Profile"
+        />
+
         <h2 className="dash-title">Welcome, {user.name} 👋</h2>
 
         <div className="dash-info">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../api';
-import './AdminUsers.css'; // NEW modern CSS file
+import './AdminUsers.css'; // modern CSS file
 
 function AdminUsers() {
   const navigate = useNavigate();
@@ -67,6 +67,7 @@ function AdminUsers() {
             <table className="users-table">
               <thead>
                 <tr>
+                  <th>Profile</th>
                   <th>Name</th>
                   <th>Email</th>
                   <th>Role</th>
@@ -77,18 +78,32 @@ function AdminUsers() {
               <tbody>
                 {users.map((u) => (
                   <tr key={u._id}>
+                    {/* Profile Picture Column */}
+                    <td>
+                      <img
+                        className="user-pic"
+                        src={
+                          u.profilePic
+                            ? `${process.env.REACT_APP_API_URL}/uploads/${u.profilePic}`
+                            : '/default.png' // fallback from public folder
+                        }
+                        alt={u.name}
+                      />
+                    </td>
                     <td>{u.name}</td>
                     <td>{u.email}</td>
                     <td>{u.role}</td>
                     <td>
-                      <button className="delete-btn" onClick={() => handleDelete(u._id)}>
+                      <button
+                        className="delete-btn"
+                        onClick={() => handleDelete(u._id)}
+                      >
                         Delete
                       </button>
                     </td>
                   </tr>
                 ))}
               </tbody>
-
             </table>
           </div>
         )}

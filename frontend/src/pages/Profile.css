@@ -1,68 +1,81 @@
+/* Container */
 .profile-container {
-  max-width: 600px;
-  margin: 50px auto;
-  font-family: 'Poppins', sans-serif;
+max-width: 500px;
+margin: 50px auto;
+font-family: 'Arial', sans-serif;
 }
 
-.profile-container h2 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
+/* Cards */
 .card {
-  background: #ffffff;
-  padding: 25px;
-  margin-bottom: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+background: #fff;
+padding: 20px;
+margin-top: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.card h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
+/* Profile Pic Wrapper */
+.profile-pic-wrapper {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
 }
 
+/* Profile Image */
+.profile-pic {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid #4A90E2;
+}
+
+/* Form Groups */
 .form-group {
-  margin-bottom: 15px;
+display: flex;
+flex-direction: column;
+margin-bottom: 15px;
 }
 
 .form-group label {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 5px;
+margin-bottom: 5px;
+font-weight: bold;
 }
 
-.form-group input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="file"],
+.form-group input[type="password"] {
+padding: 8px 10px;
+border-radius: 6px;
+border: 1px solid #ccc;
+font-size: 14px;
 }
 
+/* Buttons */
 .btn {
-  width: 100%;
-  padding: 12px;
-  background: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 15px;
-  cursor: pointer;
-  transition: 0.25s ease;
-  margin-top: 8px;
+padding: 10px 20px;
+background-color: #4A90E2;
+color: white;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 14px;
 }
 
 .btn:hover {
-  background: #2980b9;
+background-color: #357ABD;
 }
 
+/* Messages */
 .success-text {
-  text-align: center;
-  color: green;
+color: green;
+font-weight: bold;
+text-align: center;
 }
 
 .error-text {
-  text-align: center;
-  color: red;
+color: red;
+font-weight: bold;
+text-align: center;
 }
