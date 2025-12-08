@@ -125,3 +125,6 @@ MIT License © 2025
 ## **8️⃣ Repo**
 
 [GitHub Repository Link](https://github.com/Bijon2002/faitetech-assignment)
+
+
+Demo Video: https://drive.google.com/drive/folders/1YvDDHS0TMraMThBEUwEEKfPHIUTX2qdf?usp=sharing
