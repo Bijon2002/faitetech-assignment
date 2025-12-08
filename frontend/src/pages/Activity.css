@@ -7,7 +7,7 @@
 }
 
 .activity-card {
-  background: #ffffff;
+  background: var(--card-bg);
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
@@ -27,7 +27,7 @@
 .activity-table {
   width: 100%;
   border-collapse: collapse;
-  background: #fff;
+  background: var(--card-bg);
 }
 
 .activity-table th {
@@ -39,11 +39,16 @@
 
 .activity-table td {
   padding: 12px;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-color);
 }
 
-.activity-table tr:hover {
+body.light .activity-table tr:hover {
   background: #f7f7ff;
+}
+
+body.dark .activity-table tr:hover {
+  background: #2a2a2a;
 }
 
 .loading-text,

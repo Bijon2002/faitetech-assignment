@@ -4,10 +4,26 @@
   padding: 10px;
 }
 
+/* Banner Rectangle */
+.dash-banner {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .dash-card {
-  background: #fff;
+  background: var(--card-bg);
   padding: 30px;
-  border-radius: 15px;
+  padding-top: 70px;
+  border-radius: 0 0 15px 15px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   text-align: center;
 }
@@ -17,8 +33,10 @@
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
-  border: 3px solid #4caf50;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -60px;
 }
 
 .dash-title {
@@ -29,7 +47,7 @@
 
 .dash-info p {
   font-size: 16px;
-  color: #333;
+  color: var(--text-color);
   margin: 5px 0;
 }
 
@@ -46,3 +64,4 @@
 .logout-btn:hover {
   background: #e04344;
 }
+

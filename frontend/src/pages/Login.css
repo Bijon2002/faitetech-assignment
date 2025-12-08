@@ -2,7 +2,7 @@
   max-width: 400px;
   margin: 70px auto;
   padding: 30px;
-  background: #ffffff;
+  background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   font-family: 'Poppins', sans-serif;
@@ -28,7 +28,9 @@
   width: 100%;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-color);
   font-size: 14px;
 }
 

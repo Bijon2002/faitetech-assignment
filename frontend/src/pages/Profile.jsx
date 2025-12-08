@@ -94,7 +94,7 @@ return ( <div className="profile-container"> <h2>My Profile</h2>
   {/* Profile Picture Centered */}
   <div className="profile-pic-wrapper">
     <img
-      className="profile-pic"
+      className="profile-page-pic"
       src={
         user.profilePic
           ? `${process.env.REACT_APP_API_URL}/uploads/${user.profilePic}`

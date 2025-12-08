@@ -5,7 +5,7 @@
 }
 
 .admin-card {
-  background: #fff;
+  background: var(--card-bg);
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
@@ -24,12 +24,14 @@
 .users-table {
   width: 100%;
   border-collapse: collapse;
+  background: var(--card-bg);
 }
 
 .users-table th, .users-table td {
   padding: 12px 10px;
-  border: 1px solid #eee;
+  border: 1px solid var(--border-color);
   text-align: center;
+  color: var(--text-color);
 }
 
 .user-pic {

@@ -44,18 +44,23 @@ function Dashboard() {
 
   return (
     <div className="dash-wrapper">
-      <div className="dash-card">
-        {/* Profile Picture */}
+      {/* Banner Rectangle with Profile Pic centered */}
+      <div 
+        className="dash-banner" 
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/banner.jpg)` }}
+      >
         <img
           className="profile-pic"
           src={
             user.profilePic
               ? `${process.env.REACT_APP_API_URL}/uploads/${user.profilePic}`
-              : '/default.png' // fallback image in public folder
+              : '/default.png'
           }
           alt="Profile"
         />
+      </div>
 
+      <div className="dash-card">
         <h2 className="dash-title">Welcome, {user.name} 👋</h2>
 
         <div className="dash-info">

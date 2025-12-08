@@ -10,6 +10,10 @@ export function ThemeProvider({ children }) {
     if (savedTheme) setDarkMode(savedTheme === 'true');
   }, []);
 
+  useEffect(() => {
+    document.body.className = darkMode ? 'dark' : 'light';
+  }, [darkMode]);
+
   const toggleTheme = () => {
     setDarkMode((prev) => {
       localStorage.setItem('darkMode', !prev);

@@ -9,4 +9,7 @@ async function logActivity(userId, action) {
   }
 }
 
+
+
+
 module.exports = logActivity;

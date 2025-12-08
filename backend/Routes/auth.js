@@ -18,10 +18,14 @@ router.post('/register', async (req, res) => {
     const newUser = new User({ name, email, password: hashedPassword });
     await newUser.save();
 
+    // Log registration action
+    logActivity(newUser._id, 'User registered');
+
     res.status(201).json({ msg: "User registered successfully" });
   } catch (err) {
     res.status(500).json({ msg: err.message });
   }
+  
 });
 
 // LOGIN
